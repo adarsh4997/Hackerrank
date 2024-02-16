@@ -1,0 +1,97 @@
+You will be given two integers N and K as an integer input.
+
+You have to print the series N, N-K, N-2K where each number should be printed in a separate line and you have to print till the time the printed integer is greater than or equal to zero.
+
+Kindly take a look at the sample test cases for a better understanding.
+
+Input Format
+
+For each test case,
+
+N will be given as an integer input in the first line,
+
+K will be given as an integer input in the second line.
+
+Constraints
+
+0 <= N , K <= 2^31-1
+Output Format
+
+Print the numbers as integer outputs in the separate line.
+
+Sample Input 0
+
+30
+4
+Sample Output 0
+
+30
+26
+22
+18
+14
+10
+6
+2
+Sample Input 1
+
+50
+5
+Sample Output 1
+
+50
+45
+40
+35
+30
+25
+20
+15
+10
+5
+0
+Sample Input 2
+
+34
+6
+Sample Output 2
+
+34
+28
+22
+16
+10
+4
+Sample Input 3
+
+49
+8
+Sample Output 3
+
+49
+41
+33
+25
+17
+9
+1
+
+
+
+Solution:
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        int N= sc.nextInt();
+        int K=sc.nextInt();
+        for(int i=N;i>=0;i-=K){
+            System.out.println(i);
+        }
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
